@@ -51,8 +51,7 @@ require 'pry'
 #   def to_param
 #     name.downcase.gsub(' ', '-')
 #   end
-# end
-class Artist
+# endclass Artist
   attr_accessor :name
   attr_reader :songs
 
@@ -76,7 +75,7 @@ class Artist
     @songs << song
     song.artist = self unless song.artist
   end
-  
+
   def add_songs(songs)
     songs.each { |song| add_song(song) }
   end
