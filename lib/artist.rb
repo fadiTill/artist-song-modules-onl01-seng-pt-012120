@@ -4,7 +4,13 @@ require 'pry'
 
 class Artist
 
-  extend Memorable
+  extend Memorable::ClassMethods
+  extend Findable::ClassMethods
+  include Memorable::InstanceMethods
+  include Paramable::InstanceMethods
+
+
+  # extend Memorable
   #   self.all.clear
   # end
 
