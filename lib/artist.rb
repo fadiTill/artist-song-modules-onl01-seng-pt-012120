@@ -51,7 +51,7 @@ require 'pry'
 #   def to_param
 #     name.downcase.gsub(' ', '-')
 #   end
-# endclass Artist
+class Artist
   attr_accessor :name
   attr_reader :songs
 
